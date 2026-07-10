@@ -10,8 +10,9 @@
 :root {
   --primaryColor: #0d1b2a;
   --secondaryColor: #f5f5f5;
-  --bgColor: ;
   --bodyTextColor: #575757;
+  --bodyTextColor-2: #888888;
+  --bodyTextColor-3: #333333;
   --transparentcolor: rgba(0, 0, 0, 0);
 }
 
@@ -140,12 +141,14 @@ p {
 
 /* Second Section Css Start Style */
 
-.secondSection .subMainDiv {
+.secondSection .subMainDiv,
+.thirdSection .subMainDiv {
   gap: 56px;
   flex-direction: column;
 }
 
-.secondSection .subMainDiv h2 {
+.secondSection .subMainDiv h2,
+.thirdSection .subMainDiv h2 {
   color: #000102;
   text-align: center;
   font-size: 56px;
@@ -181,22 +184,150 @@ p {
   gap: 8px;
 }
 
-.profileContent .designation{
-  color: #2563EB;
+.profileContent .designation {
+  color: #2563eb;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
 }
 
-.profileContent h3{
+.profileContent h3 {
   font-size: 20px;
   line-height: 28px;
   font-weight: bold;
 }
-.profileContent p{
+.profileContent p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: var(--bodyTextColor);
 }
 /* Second Section Css End Style */
+
+/* Tird Section Css Start Style */
+.thirdSection .subMainDiv {
+  gap: 0;
+}
+.priceHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.priceHeading h4,
+.priceHeading h4 {
+  text-align: center;
+}
+.priceCards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto auto auto;
+  padding: 48px 80px 0px;
+}
+
+.priceCard {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: solid 1px #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 32px;
+}
+
+.priceCard .price p{
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bodyTextColor-2);
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.priceCard .price h4{
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: bold;
+}
+.priceCard .price span{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--bodyTextColor-2)
+}
+
+.priceCard .devider{
+  background-color: #E5E7EB;
+  height: 1px;
+  width: 100%;
+}
+
+.priceCard ul{
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.priceCard ul li{
+  color: var(--bodyTextColor-3);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.priceCard ul li::marker{
+  color: #2563EB;
+}
+
+
+/* Price Card Css Style Start*/
+.priceCard1{
+  background-color: white;
+}
+.priceCard1 button{
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563EB;
+  border-radius: 8px;
+  border: 1px solid #2563EB;
+  background-color: white;
+}
+
+.priceCard2{
+  background-color: var(--primaryColor);
+}
+.priceCard2 .price p{
+  color: #93C5FD;
+}
+.priceCard2 .price h4{
+  color: white;
+}
+.priceCard2 ul li{
+  color: rgba(255, 255, 255, 0.8);
+}
+.priceCard2 .price span{
+  color: rgba(255, 255, 255, 0.5);
+}
+.priceCard2 button{
+  padding: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.priceCard3 button{
+  padding: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.priceCard3{
+  background-color: #F8F9FB;
+}
+/* Price Card Css Style End*/
+
+/* Tird Section Css End Style */
