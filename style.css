@@ -15,6 +15,16 @@
   --transparentcolor: rgba(0, 0, 0, 0);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
 .mainDiv {
   width: 100%;
   display: flex;
@@ -54,6 +64,13 @@
   padding: 20px 30px;
 }
 
+.logo {
+  height: 44px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .manuDiv ul {
   gap: 24px;
 }
@@ -75,3 +92,46 @@
   font-weight: bold;
   line-height: 24px;
 }
+
+/* Header Css Style */
+
+/* Hero Css Style */
+
+.heroDiv {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 70%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.88) 87%),
+    url("./assets/banner.jpg");
+  height: 780px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 30px 80px 30px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -3.2px;
+  align-self: center;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.hero button {
+  padding: 25px 62px;
+  font-size: 24px;
+}
+/* Hero Css Style */
