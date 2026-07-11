@@ -204,7 +204,7 @@ p {
 }
 /* Second Section Css End Style */
 
-/* Tird Section Css Start Style */
+/* Third Section Css Start Style */
 .thirdSection .subMainDiv {
   gap: 0;
 }
@@ -223,7 +223,7 @@ p {
 .priceCards {
   display: grid;
   gap: 24px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   padding: 48px 80px 0px;
 }
 
@@ -237,7 +237,7 @@ p {
   padding: 32px;
 }
 
-.priceCard .price p{
+.priceCard .price p {
   font-size: 13px;
   font-weight: 600;
   color: var(--bodyTextColor-2);
@@ -245,77 +245,76 @@ p {
   text-transform: uppercase;
 }
 
-.priceCard .price h4{
+.priceCard .price h4 {
   font-size: 44px;
   line-height: 52px;
   font-weight: bold;
 }
-.priceCard .price span{
+.priceCard .price span {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
-  color: var(--bodyTextColor-2)
+  color: var(--bodyTextColor-2);
 }
 
-.priceCard .devider{
-  background-color: #E5E7EB;
+.priceCard .devider {
+  background-color: #e5e7eb;
   height: 1px;
   width: 100%;
 }
 
-.priceCard ul{
+.priceCard ul {
   padding-left: 18px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.priceCard ul li{
+.priceCard ul li {
   color: var(--bodyTextColor-3);
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
 }
-.priceCard ul li::marker{
-  color: #2563EB;
+.priceCard ul li::marker {
+  color: #2563eb;
 }
-
 
 /* Price Card Css Style Start*/
-.priceCard1{
+.priceCard1 {
   background-color: white;
 }
-.priceCard1 button{
+.priceCard1 button {
   padding: 11px;
   font-size: 14px;
   font-weight: 600;
-  color: #2563EB;
+  color: #2563eb;
   border-radius: 8px;
-  border: 1px solid #2563EB;
+  border: 1px solid #2563eb;
   background-color: white;
 }
 
-.priceCard2{
+.priceCard2 {
   background-color: var(--primaryColor);
 }
-.priceCard2 .price p{
-  color: #93C5FD;
+.priceCard2 .price p {
+  color: #93c5fd;
 }
-.priceCard2 .price h4{
+.priceCard2 .price h4 {
   color: white;
 }
-.priceCard2 ul li{
+.priceCard2 ul li {
   color: rgba(255, 255, 255, 0.8);
 }
-.priceCard2 .price span{
+.priceCard2 .price span {
   color: rgba(255, 255, 255, 0.5);
 }
-.priceCard2 button{
+.priceCard2 button {
   padding: 11px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
 }
-.priceCard3 button{
+.priceCard3 button {
   padding: 11px;
   font-size: 14px;
   line-height: 21px;
@@ -325,9 +324,178 @@ p {
   color: var(--primaryColor);
 }
 
-.priceCard3{
-  background-color: #F8F9FB;
+.priceCard3 {
+  background-color: #f8f9fb;
 }
 /* Price Card Css Style End*/
 
-/* Tird Section Css End Style */
+/* Third Section Css End Style */
+
+/* 4th Section Css Start Style */
+.fourth-Section .subMainDiv {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.fourth-Section .reviwesHeading {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fourth-Section .reviwesHeading h2 {
+  color: #000102;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 64px;
+}
+.fourth-Section .reviwesHeading p {
+  color: var(--bodyTextColor);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.fourth-Section .reviews {
+  flex-direction: column;
+  gap: 25px;
+}
+.fourth-Section .ratioCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.fourth-Section .ratioCard {
+  padding: 20px 20px;
+  background-color: var(--primaryColor);
+  flex-direction: column;
+  border-radius: 12px;
+}
+.fourth-Section .ratioCard h5 {
+  color: white;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.fourth-Section .ratioCard p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.reviewCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+}
+.reviewCards .reviewCard {
+  background-color: #f8f9fb;
+  padding: 20px;
+  border: solid 1px #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.reviewCards .reviewCard p {
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: 500;
+}
+.reviewCards .details {
+  justify-content: flex-start;
+  gap: 10px;
+}
+.reviewCards .details span {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 6px;
+  border-radius: 100px;
+}
+
+.reviewCards .details h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.reviewCards .details p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.fourth-Section .logos {
+  flex-direction: column;
+  gap: 10px;
+}
+.fourth-Section .logos p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.fourth-Section .logos .logosDiv {
+  width: 400px;
+}
+.fourth-Section .logos .logosDiv img {
+  border-radius: 100%;
+  width: 50px;
+  object-fit: contain;
+}
+
+/* 4th Section Css End Style */
+
+/* Footer css style start here */
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 30px;
+  background-color: var(--primaryColor);
+}
+.socialIcon {
+  gap: 10px;
+}
+.socialIcon .icon {
+  height: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+.footerDiv .subMainDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerDiv .devider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.copyright p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.copyright ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.copyright ul li {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+/* Footer css style End here */
